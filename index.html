@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moratorium Option Calculator</title>
+    <!-- Link to Bootstrap CSS for styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container mt-5">
+        
         <div class="card mx-auto" style="max-width: 500px;">
+            
             <div class="card-header bg-info text-white text-center">
                 <h4>Moratorium Option Calculator</h4>
             </div>
+            <!-- Card body containing the form -->
             <div class="card-body">
                 <form>
+                    <!-- Loan Amount input field -->
                     <div class="form-group">
                         <label for="loanAmount">Loan Amount (in ₹)</label>
                         <input type="text" class="form-control text-center header" id="loanAmount" value="15,00,000">
                     </div>
+                    <!-- Loan Amount range slider -->
                     <div class="form-group">
                         <input type="range" class="form-control-range" id="loanAmountRange" min="0" max="5000000" step="10000" value="1500000">
                     </div>
+                    <!-- Loan Tenure input field -->
                     <div class="form-group d-flex justify-content-between align-items-center">
                         <label for="loanTenure" class="mb-0">Total Loan Tenure (in Months)</label>
                         <input type="number" class="form-control styled-input text-center" id="loanTenure" value="150" min="1" max="360" step="1">
                     </div>
+                    <!-- Interest Rate input field -->
                     <div class="form-group d-flex justify-content-between align-items-center">
                         <label for="interestRate" class="mb-0">Interest rate (%)</label>
                         <input type="number" class="form-control styled-input text-center" id="interestRate" value="17.00" min="0" max="100" step="0.01">
                     </div>
+                    <!-- EMIs Paid input field -->
                     <div class="form-group d-flex justify-content-between align-items-center">
                         <label for="emisPaid" class="mb-0">EMIs Paid till date (in Months)</label>
                         <input type="number" class="form-control styled-input text-center" id="emisPaid" value="30" min="0" max="360" step="1">
                     </div>
+                    <!-- Compound Interest Option buttons -->
                     <div class="form-group text-center">
                         <label>Compound Interest Option</label>
                         <div class="btn-group btn-group-toggle d-flex custom-btn-group" data-toggle="buttons">
@@ -45,6 +56,7 @@
                             </label>
                         </div>
                     </div>
+                    <!-- Moratorium Months buttons -->
                     <div class="form-group text-center">
                         <label>Moratorium Months</label>
                         <div class="btn-group btn-group-toggle d-flex custom-btn-group" data-toggle="buttons">
@@ -62,15 +74,18 @@
                             </label>
                         </div>
                     </div>
+                    <!-- Displaying Interest Overdue amount -->
                     <div class="form-group text-center">
                         <label>Interest Overdue after <span id="selectedMonths">selected</span> months</label>
                         <div class="border p-2 bg-light">
                             <strong class="interest-overdue-value">₹ 59,133</strong>
                         </div>
                     </div>
+              
                     <button type="button" class="btn btn-warning btn-block">CALCULATE</button>
                 </form>
             </div>
+            <!-- Card footer -->
             <div class="card-footer text-center">
                 <small>COVID 19 - Stay Inside Stay Safe</small><br>
                 <small>&#169; Samay Jain</small>

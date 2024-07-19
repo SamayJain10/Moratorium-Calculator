@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     btn.parentNode.classList.remove('active');
                 });
                 e.target.parentNode.classList.add('active');
-                if (groupName === 'moratoriumMonths') {// NEW: Update selected month display
+                if (groupName === 'moratoriumMonths') {
                     selectedMonthsElement.textContent = e.target.id.replace('month', '');
                 }
             });
