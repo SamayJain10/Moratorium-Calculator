@@ -1,0 +1,146 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body{
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background-color: #11132b;
+    color: white;
+}
+
+.btn-group-toggle .btn {
+    border-radius: 0;
+}
+
+.btn-group-toggle .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-group-toggle .btn-light {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+}
+
+.btn-warning {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e68900;
+    border-color: #e68900;
+}
+
+.card-footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.header{
+    background-color: #dce2e9;
+}
+
+.styled-input {
+    background-color: #c0c3c6;
+    border: none;
+    box-shadow: none;
+    width: 48%;
+}
+
+.styled-input:focus {
+    background-color: #e9ecef;
+    border: none;
+    box-shadow: none;
+}
+
+.form-group.d-flex {
+    margin-bottom: 1rem;
+}
+
+.form-group.d-flex label {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.form-group.d-flex .styled-input {
+    flex: 0 0 auto;
+}
+
+.custom-btn-group .btn {
+    margin-right: 8px;
+    margin-left: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    color: #495057;
+}
+
+.custom-btn-group .btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.custom-btn-group .btn-custom.active {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.custom-btn-group .btn-custom:not(.active) {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.custom-btn-group .btn-custom.active {
+    background-color: #138496;
+    color: #fff;
+}
+
+.custom-btn-group .btn-custom:hover {
+    background-color: #e2e6ea;
+    color: #495057;
+}
+
+.interest-overdue-value{
+    color: black;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #1ab2b8;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background: #1ab2b8;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background: #1ab2b8;
+    cursor: pointer;
+    border-radius: 50%;
+}
